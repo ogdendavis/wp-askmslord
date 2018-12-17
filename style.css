@@ -59,6 +59,10 @@ body {
 .main-navigation ul {
 	list-style: none;
 }
+.main-navigation li {
+	display: inline-block;
+	padding-right: 2rem;
+}
 .main-navigation a {
 	text-decoration: none;
 }
