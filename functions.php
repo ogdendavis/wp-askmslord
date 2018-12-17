@@ -36,4 +36,22 @@
   register_nav_menus([
     'main-menu' => esc_html__( 'Main Menu', 'askmslord' ),
     ]);
+
+  // Set up sidebar
+  function askmslord_widgets_init() {
+    // Use this function to set up any type of widget area! The main one will
+    // be the main sidebar, but it's easy to add others by registering another
+    // sidebar here.
+    register_sidebar([
+      'name'            => esc_html__( 'Main Sidebar', 'askmslord' ),
+      'id'              => 'main-sidebar',
+      'description'     => esc_html__( 'Add widgets for main sidebar here', 'askmslord' ),
+      'before_widget'   => '<section class = "widget">',
+      'after_widget'    => '</section>',
+      'before_title'    => '<h2 class = "widget-title">',
+      'after_title'     => '</h2>'
+    ]);
+  }
+  // Now hook into WP's process so it will display the sidebar
+  add_action( 'widgets_init', 'askmslord_widgets_init' );
 ?>

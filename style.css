@@ -89,10 +89,13 @@ body {
 	width: 23%;
 }
 
-.sidebar-image {
-	display: block;
-  margin: auto;
+.widget, .wp-caption, .sidebar-image {
   max-width: 100%;
+}
+
+.wp-caption {
+	font-size: 0.75rem;
+	text-align: justify;
 }
 
 
