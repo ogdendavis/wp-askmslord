@@ -12,3 +12,13 @@ Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-rea
 
 This is where a longer description would go!
 */
+
+:root {
+  --black: #222;
+  --white: #ddd;
+}
+
+body {
+  background-color: var(--black);
+  color: var(--white);
+}
