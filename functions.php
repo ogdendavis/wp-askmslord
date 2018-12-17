@@ -31,4 +31,9 @@
   }
   // Now we tell wordpress to use our funciton to load the styles!
   add_action( 'wp_enqueue_scripts', 'askmslord_enqueue_styles' );
+
+  // Set up menus
+  register_nav_menus([
+    'main-menu' => esc_html__( 'Main Menu', 'askmslord' ),
+    ]);
 ?>
