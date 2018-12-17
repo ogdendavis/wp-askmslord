@@ -89,6 +89,12 @@ body {
 	width: 23%;
 }
 
+.sidebar-image {
+	display: block;
+  margin: auto;
+  max-width: 100%;
+}
+
 
 /* Text meant only for screen readers -- from WordPress handbook */
 
