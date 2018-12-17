@@ -68,6 +68,28 @@ body {
 }
 
 
+/* Primary content area styling */
+
+#primary {
+	box-sizing: border-box;
+	float: left;
+	margin-left: 2%;
+	padding: 0 0.5rem;
+	width: 73%;
+}
+
+
+/* Sidebar styling */
+
+#secondary {
+	box-sizing: border-box;
+	float: right;
+	margin-right: 2%;
+	padding: 0.5rem;
+	width: 23%;
+}
+
+
 /* Text meant only for screen readers -- from WordPress handbook */
 
 .screen-reader-text {
