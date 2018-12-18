@@ -4,18 +4,29 @@
 
     <main id = "main" class = "site-main" role = "main">
 
-      <!-- This is where the loop will start -->
-      <article id = "post-<?php the_ID(); ?>" <?php post_class(); ?> >
+      <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+        <article id = "post-<?php the_ID(); ?>" <?php post_class(); ?> >
 
-        <header class = "entry-header">
-          <h1>Ask Ms. Lord!</h1>
-        </header>
+          <header class = "entry-header">
+            <?php the_title( '<h1>', '</h1>' ); ?>
+          </header>
 
-        <div class = "entry-content">
-          <p>A place for students and parents to get information and guidance on the college admission process from an experienced professional</p>
-        </div>
+          <div class = "entry-content">
+            <?php the_content(); ?>
+          </div>
+        </article>
+        <?php endwhile; else: ?>
+          <article id = "post-<?php the_ID(); ?>" <?php post_class(); ?> >
 
-      </article>
+            <header class = "entry-header">
+              <h1><?php esc_html_e( '404', 'askmslord' ); ?></h1>
+            </header>
+
+            <div class = "entry-content">
+              <p><?php esc_html_e( 'Oops! That page doesn\'t exist.', 'askmslord' ); ?></p>
+            </div>
+          </article>
+        <?php endif; ?>
 
     </main>
 
