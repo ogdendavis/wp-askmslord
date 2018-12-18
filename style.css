@@ -99,6 +99,13 @@ body {
 }
 
 
+/* Post styling (content.php) */
+
+.byline {
+  font-size: 0.75rem;
+  font-style: italic;
+}
+
 /* Text meant only for screen readers -- from WordPress handbook */
 
 .screen-reader-text {
