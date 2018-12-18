@@ -3,7 +3,7 @@
   add_theme_support( 'title-tag' );
   add_theme_support( 'post-thumbnails' );
   // Select post formats for this site -- this is all, but can pick just a few
-  add_theme_support( 'post_format', ['aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat'] );
+  add_theme_support( 'post-formats', ['aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat'] );
   // enable HTML 5 features
   add_theme_support( 'html5' );
   // Generate RSS links automatically
