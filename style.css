@@ -106,6 +106,12 @@ body {
   font-style: italic;
 }
 
+.comments-area {
+	border-top: 1px solid var(--gray);
+	margin-top: 1.5rem;
+}
+
+
 /* Text meant only for screen readers -- from WordPress handbook */
 
 .screen-reader-text {
