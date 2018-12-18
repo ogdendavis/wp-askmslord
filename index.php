@@ -1,3 +1,5 @@
+<!-- index.php -->
+
 <?php get_header(); ?>
 
   <div id = "primary" class = "content-area">
@@ -11,7 +13,7 @@
       <?php endwhile; else: ?>
 
           <?php get_template_part( 'template-parts/content', 'none' ); ?>
-          
+
       <?php endif; ?>
 
     </main>
