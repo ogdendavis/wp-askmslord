@@ -17,6 +17,8 @@ This is where a longer description would go!
   --black: #222;
   --white: #ddd;
 	--gray: #777;
+  --link: #0099ff;
+  --visited: #551A8B;
 }
 
 body {
@@ -109,6 +111,18 @@ body {
 .comments-area {
 	border-top: 1px solid var(--gray);
 	margin-top: 1.5rem;
+}
+
+
+/* Blog styling (content-posts.php) */
+
+.permalink {
+  color: var(--link);
+  text-decoration: none;
+}
+
+.permalink:visited {
+  color: var(--visited);
 }
 
 
