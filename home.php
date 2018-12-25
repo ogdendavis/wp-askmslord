@@ -16,6 +16,8 @@
 
       <?php endif; ?>
 
+      <?php echo paginate_links(); ?>
+
     </main>
 
   </div>
