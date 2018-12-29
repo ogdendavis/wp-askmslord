@@ -18,7 +18,7 @@ This is where a longer description would go!
   --white: #ddd;
 	--gray: #777;
   --link: #0099ff;
-  --visited: #551A8B;
+  --visited: #8028d2;
 }
 
 body {
@@ -98,6 +98,26 @@ body {
 .wp-caption {
 	font-size: 0.75rem;
 	text-align: justify;
+}
+
+.widget_recent_entries .widget-title {
+	margin-bottom: 0;
+}
+
+.widget_recent_entries ul {
+	margin-top: 0.25rem;
+  font-size: 1.25rem;
+  list-style: none;
+  padding-left: 0.5rem;
+}
+
+.widget_recent_entries a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+.widget_recent_entries a:visited {
+  color: var(--visited);
 }
 
 

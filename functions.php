@@ -55,7 +55,7 @@
       'name'            => esc_html__( 'Page Sidebar', 'askmslord' ),
       'id'              => 'page-sidebar',
       'description'     => esc_html__( 'Add widgets for page sidebar here', 'askmslord' ),
-      'before_widget'   => '<section class = "widget">',
+      'before_widget'   => '<section class = "widget %2$s">',
       'after_widget'    => '</section>',
       'before_title'    => '<h2 class = "widget-title">',
       'after_title'     => '</h2>'
