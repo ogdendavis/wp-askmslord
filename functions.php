@@ -51,6 +51,15 @@
       'before_title'    => '<h2 class = "widget-title">',
       'after_title'     => '</h2>'
     ]);
+    register_sidebar([
+      'name'            => esc_html__( 'Page Sidebar', 'askmslord' ),
+      'id'              => 'page-sidebar',
+      'description'     => esc_html__( 'Add widgets for page sidebar here', 'askmslord' ),
+      'before_widget'   => '<section class = "widget">',
+      'after_widget'    => '</section>',
+      'before_title'    => '<h2 class = "widget-title">',
+      'after_title'     => '</h2>'
+    ]);
   }
   // Now hook into WP's process so it will display the sidebar
   add_action( 'widgets_init', 'askmslord_widgets_init' );
