@@ -101,6 +101,17 @@ body {
 }
 
 
+/* Footer styling */
+
+.site-footer {
+  clear: both; /* Ensures footer is below all other content */
+  font-size: 0.75rem;
+  margin: 2rem auto 1rem auto;
+  text-align: center;
+  width: 80%;
+}
+
+
 /* Post styling (content.php) */
 
 .byline {
