@@ -80,6 +80,10 @@ body {
 	width: 73%;
 }
 
+.full-width {
+  width: 96% !important; /* Account for 2% margin on each side */
+}
+
 
 /* Sidebar styling */
 
@@ -154,6 +158,37 @@ body {
 
 .permalink:visited {
   color: var(--visited);
+}
+
+
+/* 404 styling */
+
+.error {
+  font-size: 1.25rem;
+}
+
+.error h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.error p {
+  box-sizing: border-box;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.error form {
+	margin: 2rem auto 4rem;
+	text-align: center;
+}
+
+.error input.search-field {
+  font-size: 1.5rem;
+}
+
+.error input.search-submit {
+  font-size: 1.5rem;
 }
 
 
