@@ -161,6 +161,19 @@ body {
 }
 
 
+/* Search result styling */
+
+.search__header {
+	position: relative;
+}
+
+.search__subtitle {
+	display: block;
+	font-style: italic;
+	margin-top: -1rem;
+}
+
+
 /* 404 styling */
 
 .error {
