@@ -27,7 +27,9 @@
     // time() trick for version num tricks WP into reloading stylesheet on every
     // refresh -- good for development, bad for production -- set to a version
     // before publishing!
-    wp_enqueue_style( 'main-css', get_stylesheet_directory_uri() . '/style.css', [], time(), 'all' );
+    wp_enqueue_style( 'font-css', 'https://fonts.googleapis.com/css?family=Thasadith', [], '', 'all');
+    wp_enqueue_style( 'main-css', get_stylesheet_directory_uri() . '/style.css', [ 'font-css' ], time(), 'all' );
+    wp_enqueue_style( 'screenreader-css', get_stylesheet_directory_uri() . '/assets/css/screenreader.css', [], '', 'all');
   }
   // Now we tell wordpress to use our funciton to load the styles!
   add_action( 'wp_enqueue_scripts', 'askmslord_enqueue_styles' );
